@@ -46,7 +46,7 @@ export default function NavBar() {
       </div>
       {isOpen && (
         <aside className="fixed bottom-0 right-0 z-10 h-full w-full bg-black px-5 py-8 text-white md:px-10">
-          <ul className="flex h-full flex-col items-start justify-center gap-6 font-josefinSans text-2xl font-light md:items-center md:gap-12 md:text-4xl">
+          <ul className="flex h-full flex-col items-start justify-center gap-6 font-josefinSans text-2xl font-light md:mt-16 md:items-center md:gap-12 md:text-3xl">
             <NavMenu isHeader={true} />
           </ul>
         </aside>
