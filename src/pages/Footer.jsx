@@ -13,9 +13,9 @@ export default function Footer() {
         </ul>
       </div>
       <div className="flex flex-col items-center justify-center lg:items-end">
-        <ul className="group flex gap-4">
+        <menu className="group flex gap-4">
           <SocialMedia />
-        </ul>
+        </menu>
         <p className="mt-3 font-alata text-darkGray lg:mt-4">
           {footerText.title}
         </p>
