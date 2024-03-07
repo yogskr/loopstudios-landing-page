@@ -37,8 +37,8 @@ export default function Projects() {
       key={item.id}
       className={`group flex h-[125px] w-full lg:h-[400px] lg:w-full xl:h-[450px] 2xl:w-full ${item.backgroundMobile} ${item.backgroundDesktop} bg-cover bg-no-repeat`}
     >
-      <figcaption className="flex h-full w-full items-end bg-gradient-to-r from-black/70 p-5 transition delay-200 duration-300 hover:cursor-pointer hover:from-neutral-300/85 hover:to-neutral-300/85">
-        <p className="flex w-full flex-col text-balance font-josefinSans text-[1.5rem] font-extralight leading-none text-white group-hover:font-light group-hover:text-black md:text-[1.8rem]">
+      <figcaption className="group flex h-full w-full items-end bg-gradient-to-r from-black/65 p-5 hover:cursor-pointer hover:from-neutral-300/75 hover:to-neutral-300/85 hover:transition-all">
+        <p className="flex w-full flex-col text-balance font-josefinSans text-[1.5rem] font-extralight leading-none text-white group-hover:font-normal group-hover:text-black group-hover:transition-all group-hover:delay-100 group-hover:duration-500 md:text-[1.8rem]">
           <span>{uppercaseLetter(item.titleOne)}</span>
           <span>{uppercaseLetter(item.titleTwo)}</span>
         </p>
@@ -47,17 +47,17 @@ export default function Projects() {
   ));
 
   return (
-    <section className="flex flex-col items-center justify-center gap-10 px-5 pb-20 pt-10 md:px-10 md:pb-28 md:pt-16 lg:px-20 xl:px-40 2xl:px-52">
-      <article className="flex w-full items-center justify-center lg:justify-between">
+    <div className="flex flex-col items-center justify-center gap-10 px-5 pb-20 pt-10 md:px-10 md:pb-28 md:pt-16 lg:px-20 xl:px-40 2xl:px-52">
+      <section className="flex w-full items-center justify-center lg:justify-between">
         <h2 className="font-josefinSans text-[2rem] font-light md:text-[2.5rem] lg:text-[2.5rem] xl:text-[3rem]">
           {uppercaseLetter(projectText.heading)}
         </h2>
         {showButton && <Button />}
-      </article>
-      <div className="flex w-full flex-col items-center gap-5 lg:grid lg:grid-cols-4 2xl:gap-12">
+      </section>
+      <figure className="flex w-full flex-col items-center gap-5 lg:grid lg:grid-cols-4 2xl:gap-12">
         {projectItems}
-      </div>
+      </figure>
       {!showButton && <Button />}
-    </section>
+    </div>
   );
 }
