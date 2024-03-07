@@ -30,7 +30,7 @@ export default function NavBar() {
   return (
     <nav ref={ref}>
       <div
-        className={`fixed left-0 right-0 z-20 flex items-center justify-between px-5 py-8 md:px-10 lg:px-20 xl:px-40 ${
+        className={`fixed left-0 right-0 z-20 flex items-center justify-between px-5 py-8 md:px-10 lg:px-20 xl:px-40 2xl:px-52 ${
           scrolled
             ? "backdrop-blur-lg backdrop-brightness-50"
             : "bg-transparent"

@@ -47,9 +47,9 @@ export default function Projects() {
   ));
 
   return (
-    <section className="flex flex-col items-center justify-center gap-10 px-5 pb-20 pt-10 md:px-10 md:pb-28 md:pt-16 lg:px-20 xl:px-40">
-      <article className="flex w-full items-center justify-between">
-        <h2 className="text-center font-josefinSans text-[2rem] font-light md:text-[2.5rem] lg:text-[2.5rem] xl:text-[3rem]">
+    <section className="flex flex-col items-center justify-center gap-10 px-5 pb-20 pt-10 md:px-10 md:pb-28 md:pt-16 lg:px-20 xl:px-40 2xl:px-52">
+      <article className="flex w-full items-center justify-center lg:justify-between">
+        <h2 className="font-josefinSans text-[2rem] font-light md:text-[2.5rem] lg:text-[2.5rem] xl:text-[3rem]">
           {uppercaseLetter(projectText.heading)}
         </h2>
         {showButton && <Button />}
