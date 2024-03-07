@@ -4,7 +4,7 @@ import { uppercaseLetter } from "../assets/helpers/helper";
 
 export default function About() {
   return (
-    <section className="flex flex-col items-center gap-10 px-5 pb-10 pt-20 md:px-10 md:pb-16 md:pt-28 lg:flex-row lg:px-20 xl:px-40 2xl:px-52">
+    <div className="flex flex-col items-center gap-10 px-5 pb-10 pt-20 md:px-10 md:pb-16 md:pt-28 lg:flex-row lg:px-20 xl:px-40 2xl:px-52">
       <img className="lg:hidden" src={about.srcMobile} alt={about.alt} />
       <img
         className="hidden lg:block lg:w-[65%] xl:max-w-4xl"
@@ -19,6 +19,6 @@ export default function About() {
           {aboutTexts.paragraph}
         </p>
       </article>
-    </section>
+    </div>
   );
 }
